@@ -1,0 +1,44 @@
+# =========================
+# IGNORE ALL BY DEFAULT
+# =========================
+*
+
+# =========================
+# ALLOW FOLDERS
+# =========================
+!xtuner/
+!xtuner/**
+
+# =========================
+# ALLOW TRAIN / TEST SCRIPTS
+# =========================
+!train_llast.sh
+!train_llast.slurm
+!test_llast.sh
+!test.py
+
+# =========================
+# ALLOW GIT FILES
+# =========================
+!.gitignore
+!README.md
+
+# =========================
+# EXPLICIT IGNORE (for clarity)
+# =========================
+data/
+outputs/
+Project_E2E/
+work_dirs/
+*.tar.gz
+*.pth
+*.pt
+*.ckpt
+xtuner_full_env_py310.tar.gz
+# =========================
+# PYTHON CACHE
+# =========================
+__pycache__/
+*.pyc
+*.log
+.ipynb_checkpoints/
