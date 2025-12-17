@@ -3,7 +3,7 @@
 ### ==========================
 ### 1. LOAD CONDA ENV
 ### ==========================
-source /home/da530038/miniconda/etc/profile.d/conda.sh
+source ../miniconda/etc/profile.d/conda.sh
 conda activate asr_env     # <<< bạn đang dùng môi trường này
 
 ### ==========================
@@ -18,16 +18,16 @@ export TOKENIZERS_PARALLELISM=false
 ### 3. CHỌN GPU
 ### ==========================
 export CUDA_VISIBLE_DEVICES=0   
-# Set CUDA_HOME đến phiên bản 12.9 có sẵn
+# Set CUDA_HOME 
 export CUDA_HOME=/usr/local/cuda-12.9
 export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 ### ==========================
 ### 4. PATH DỰ ÁN
 ### ==========================
-XTUNER_DIR="/home/da530038/tai_speech/xtuner"
-CONFIG="/home/da530038/tai_speech/data/configs/llast_en_vi.py"
-WORK_DIR="/home/da530038/tai_speech/work_dirs/llast_en_vi"
+XTUNER_DIR="../tai_speech/xtuner"
+CONFIG="../tai_speech/data/configs/llast_en_vi.py"
+WORK_DIR="../tai_speech/work_dirs/llast_en_vi"
 
 cd $XTUNER_DIR
 export PYTHONPATH=$XTUNER_DIR:$PYTHONPATH

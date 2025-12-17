@@ -3,7 +3,7 @@
 ### ==========================
 ### 1. LOAD CONDA ENV
 ### ==========================
-source /home/da530038/miniconda/etc/profile.d/conda.sh
+source ../miniconda/etc/profile.d/conda.sh
 conda activate asr_env     # dùng cùng môi trường với train
 
 ### ==========================
@@ -25,9 +25,9 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 ### ==========================
 ### 4. PATH DỰ ÁN
 ### ==========================
-XTUNER_DIR="/home/da530038/tai_speech/xtuner"
-CONFIG="/home/da530038/tai_speech/data/configs/llast_en_vi.py"
-CHECKPOINT="/home/da530038/tai_speech/work_dirs/llast_en_vi/iter_120000.pth"
+XTUNER_DIR="../tai_speech/xtuner"
+CONFIG="../tai_speech/data/configs/llast_en_vi.py"
+CHECKPOINT="../tai_speech/work_dirs/llast_en_vi/iter_120000.pth"
 
 cd $XTUNER_DIR
 export PYTHONPATH=$XTUNER_DIR:$PYTHONPATH

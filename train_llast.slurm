@@ -39,9 +39,9 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 ### ==========================
 ### 4. PATH DỰ ÁN
 ### ==========================
-XTUNER_DIR="/home/da530038/tai_speech/xtuner"
-CONFIG="/home/da530038/tai_speech/data/configs/llast_en_vi.py"
-WORK_DIR="/home/da530038/tai_speech/work_dirs/llast_en_vi"
+XTUNER_DIR="../tai_speech/xtuner"
+CONFIG="../tai_speech/data/configs/llast_en_vi.py"
+WORK_DIR="../tai_speech/work_dirs/llast_en_vi"
 
 cd $XTUNER_DIR
 export PYTHONPATH=$XTUNER_DIR:$PYTHONPATH
